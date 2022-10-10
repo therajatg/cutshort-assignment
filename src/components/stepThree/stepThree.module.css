@@ -1,0 +1,19 @@
+.content {
+  width: 25rem;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 2rem;
+}
+
+.usageType {
+  border: 1px solid var(--secondary-text-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.typeDescription {
+  color: var(--secondary-text-color);
+}
