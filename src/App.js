@@ -12,9 +12,9 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<ProgressIndicator />}>
-        <Route path="/step1" element={<StepOne />} />
-        {/*<Route path="/home/step2" element={<StepTwo />} />
-        <Route path="/home/step3" element={<StepThree />} />
+        <Route path="/" element={<StepOne />} />
+        <Route path="/step2" element={<StepTwo />} />
+        {/*<Route path="/home/step3" element={<StepThree />} />
         <Route path="/home/step4" element={<StepFour />} /> */}
       </Route>
     </Routes>

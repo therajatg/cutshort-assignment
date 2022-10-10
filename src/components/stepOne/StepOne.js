@@ -14,11 +14,11 @@ export const StepOne = () => {
       <form onSubmit={() => navigate("/step2")}>
         <div>
           <label htmlFor="fullName">Full Name</label>
-          <input type="text" placeholder="Steve Jobs" id="fullName" />
+          <input type="text" placeholder="Steve Jobs" id="fullName" required />
         </div>
         <div>
           <label htmlFor="fullName">Display Name</label>
-          <input type="text" placeholder="Steve" id="fullName" />
+          <input type="text" placeholder="Steve" id="fullName" required />
         </div>
 
         <button>Create Workspace</button>
