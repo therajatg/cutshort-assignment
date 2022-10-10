@@ -33,7 +33,7 @@ export const StepThree = () => {
             </span>
           </div>
         </main>
-        <button>Create Workspace</button>
+        <button onClick={() => navigate("/step4")}>Create Workspace</button>
       </div>
     </>
   );
