@@ -1,5 +1,5 @@
 import { RiLeafFill } from "react-icons/ri";
-import { useLocation } from "react-router-dom";
+import { useLocation, Outlet } from "react-router-dom";
 import style from "./progressIndicator.module.css";
 
 const stepNumbers = [
@@ -23,6 +23,7 @@ export const ProgressIndicator = () => {
             </div>
           ))}
         </div>
+        <Outlet />
       </div>
     </div>
   );

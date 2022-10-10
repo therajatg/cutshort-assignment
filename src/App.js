@@ -12,8 +12,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<ProgressIndicator />}>
-        {/* <Route path="/home/step1" element={<StepOne />} />
-        <Route path="/home/step2" element={<StepTwo />} />
+        <Route path="/step1" element={<StepOne />} />
+        {/*<Route path="/home/step2" element={<StepTwo />} />
         <Route path="/home/step3" element={<StepThree />} />
         <Route path="/home/step4" element={<StepFour />} /> */}
       </Route>
