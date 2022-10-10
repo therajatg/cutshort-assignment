@@ -1,0 +1,35 @@
+.window {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  row-gap: 3rem;
+  flex-direction: column;
+  width: 25rem;
+  border: 2px solid black;
+}
+
+.allSteps {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.step {
+  background-color: blueviolet;
+  color: white;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
