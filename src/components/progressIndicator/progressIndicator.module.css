@@ -11,13 +11,13 @@
   align-items: center;
   row-gap: 3rem;
   flex-direction: column;
-  width: 25rem;
+  min-width: 25rem;
   border: 2px solid black;
   color: var(--primary-text-color);
 }
 
 .allSteps {
-  width: 100%;
+  width: 25rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
