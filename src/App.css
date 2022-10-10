@@ -43,7 +43,7 @@ form input {
   color: var(--secondary-text-color);
 }
 
-form button {
+button {
   width: 100%;
   background-color: var(--primary-color);
   padding: 0.7rem;
