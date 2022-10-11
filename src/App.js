@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<StepOne />} />
         <Route path="/step2" element={<StepTwo />} />
         <Route path="/step3" element={<StepThree />} />
-        {/*<Route path="/home/step4" element={<StepFour />} /> */}
+        <Route path="/step4" element={<StepFour />} />
       </Route>
     </Routes>
   );
