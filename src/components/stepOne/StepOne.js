@@ -1,9 +1,10 @@
 import style from "./stepOne.module.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useOutletContext } from "react-router-dom";
 
 export const StepOne = () => {
   const navigate = useNavigate();
-
+  const [displayName, setDisplayName] = useOutletContext();
+  console.log(displayName);
   return (
     <>
       <div className="description">
@@ -18,7 +19,14 @@ export const StepOne = () => {
         </div>
         <div>
           <label htmlFor="fullName">Display Name</label>
-          <input type="text" placeholder="Steve" id="fullName" required />
+          <input
+            type="text"
+            placeholder="Steve"
+            id="fullName"
+            value={displayName}
+            onChange={(e) => setDisplayName(e.target.value)}
+            required
+          />
         </div>
 
         <button>Create Workspace</button>

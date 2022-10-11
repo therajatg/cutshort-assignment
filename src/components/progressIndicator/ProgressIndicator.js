@@ -1,6 +1,7 @@
 import { RiLeafFill } from "react-icons/ri";
 import { useLocation, Outlet } from "react-router-dom";
 import style from "./progressIndicator.module.css";
+import { useState } from "react";
 
 const stepNumbers = [
   { step: 1, path: "/" },
@@ -10,6 +11,8 @@ const stepNumbers = [
 ];
 export const ProgressIndicator = () => {
   const { pathname } = useLocation();
+  const [displayName, setDisplayName] = useState("");
+  console.log(displayName);
   return (
     <div className={style.window}>
       <div className={style.main}>
@@ -23,7 +26,7 @@ export const ProgressIndicator = () => {
             </div>
           ))}
         </div>
-        <Outlet />
+        <Outlet context={[displayName, setDisplayName]} />
       </div>
     </div>
   );
