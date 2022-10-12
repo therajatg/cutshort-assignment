@@ -20,7 +20,18 @@ export const StepTwo = () => {
           <label htmlFor="fullName">
             Workspace URL <span className={style.optional}>(optional)</span>
           </label>
-          <input type="text" placeholder="Example" id="fullName" />
+          <input
+            type="text"
+            placeholder="www.eden.com/"
+            readOnly
+            className={style.fixedInput}
+          />
+          <input
+            type="text"
+            placeholder="Example"
+            id="fullName"
+            className={style.workspaceUrl}
+          />
         </div>
 
         <button>Create Workspace</button>

@@ -1,19 +1,39 @@
-.content {
-  width: 25rem;
-}
-
 .main {
   display: flex;
-  justify-content: space-evenly;
-  column-gap: 2rem;
+  column-gap: 1.7rem;
+  margin-top: -2rem;
 }
 
 .usageType {
-  border: 1px solid var(--secondary-text-color);
-  padding: 1rem;
+  border: 2.2px solid var(--light-color);
+  padding: 1.2rem;
   border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--small-text-font-size);
+}
+
+.usageType:hover {
+  cursor: pointer;
+}
+
+.active {
+  border: 1.7px solid var(--primary-color);
+}
+
+.icon {
+  transform: scale(1.6);
+  margin-bottom: 1rem;
+}
+
+.activeIcon {
+  color: var(--primary-color);
 }
 
 .typeDescription {
   color: var(--secondary-text-color);
+}
+
+.createBtn {
+  margin-top: -3rem;
 }

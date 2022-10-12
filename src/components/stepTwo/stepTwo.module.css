@@ -1,3 +1,18 @@
 .optional {
   color: var(--secondary-text-color);
 }
+
+.fixedInput {
+  background-color: var(--light-color);
+  pointer-events: none;
+  width: min-content;
+  display: inline;
+  width: 7.8rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.workspaceUrl {
+  width: 16.2rem;
+  display: inline;
+  border-radius: 0 0.5rem 0.5rem 0;
+}

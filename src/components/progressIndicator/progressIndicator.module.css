@@ -9,16 +9,32 @@
 .main {
   display: flex;
   align-items: center;
-  row-gap: 3rem;
+  justify-content: center;
+  row-gap: 4.5rem;
   flex-direction: column;
-  width: 20rem;
-  border: 2px solid black;
+  max-width: 25%;
   color: var(--primary-text-color);
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 0.3rem;
+}
+
+.logo h1 {
+  font-size: var(--heading-font-size);
+}
+
+.logo img {
+  height: 1.8rem;
+  filter: invert(28%) sepia(88%) saturate(1671%) hue-rotate(237deg)
+    brightness(81%) contrast(105%);
 }
 
 .userProgress {
-  width: 100%;
+  width: 80%;
   position: relative;
 }
 

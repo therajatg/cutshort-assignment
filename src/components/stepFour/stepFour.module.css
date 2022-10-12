@@ -1,6 +1,23 @@
-.tick {
-  padding: 1rem;
+/* .tickIcon {
+  transform: scale(2);
+} */
+
+.tickContainer {
+  /* padding: 1rem; */
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   background-color: var(--primary-color);
   color: var(--button-text-color);
+}
+
+.description {
+  margin-top: -2rem;
+}
+
+.launchBtn {
+  margin-top: -2.5rem;
 }

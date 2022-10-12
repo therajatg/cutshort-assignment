@@ -9,16 +9,20 @@
 
 :root {
   --primary-color: #5d3fd3;
-  --primary-text-color: black;
-  --secondary-text-color: rgb(113, 118, 123);
-  --button-text-color: white;
-  --light-color: whitesmoke;
+  --primary-text-color: #000000;
+  --secondary-text-color: #71767b;
+  --button-text-color: #ffffff;
+  --light-color: #f5f5f5;
+  --heading-font-size: 1.7rem;
+  --text-font-size: 0.9rem;
+  --small-text-font-size: 0.8rem;
 }
 
 form input,
 label {
   display: block;
   margin-bottom: 0.3rem;
+  font-size: var(--small-text-font-size);
 }
 
 form {
@@ -26,11 +30,12 @@ form {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+  margin-top: -2rem;
 }
 
 form input {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.6rem;
   border: 2px solid var(--light-color);
   border-radius: 0.5rem;
 }
@@ -43,7 +48,12 @@ form input {
   width: max-content;
 }
 
+.description h1 {
+  font-size: var(--heading-font-size);
+}
+
 .description p {
+  font-size: var(--text-font-size);
   color: var(--secondary-text-color);
 }
 
@@ -54,4 +64,8 @@ button {
   border-radius: 0.5rem;
   border: none;
   color: var(--button-text-color);
+}
+
+button:hover {
+  cursor: pointer;
 }
